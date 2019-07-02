@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,600i,700');
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+a{
+  text-decoration: none;
+}
+body {
+  margin: 0;
+}
+
+#cust-widget-note{
+  width: 128px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#cust-widget-note img.sceau{
+  display: block;
+  border: 0;
+}
+
+/***** Rating *****/
+.cust-rating-box{
+  position: absolute;
+  width: 84px;
+  left: 22px;
+  bottom: 7px;
+}
+
+#StarSelector {
+  width: 82px;
+  height: 16px;
+  position: relative;
+  top: -2px;
+  display: inline-block;
+  margin: 0;
+  background: url("../img/stars.svg");
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-position: 0 1px;
+  background-repeat: no-repeat;
+}
+#StarSelector.stars-selected-1 {
+  background-position: 0 -16px;
+}
+#StarSelector.stars-selected-2 {
+  background-position: 0 -32px;
+}
+#StarSelector.stars-selected-3 {
+  background-position: 0 -49px;
+}
+#StarSelector.stars-selected-4 {
+  background-position: 0 -65px;
+}
+#StarSelector.stars-selected-5 {
+  background-position: 0 -82px;
+}
+
+.cust-votants{
+  font-size: 10px;
+  font-weight: 600;
+  font-style: italic;
+  color: #696868;
+}
+.cust-votants b{
+  font-weight: 700;
+  font-style: normal;
+  color: #231f20;
+}
+.cust-note{
+  position: relative;
+  top: -4px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #231f20;
+}
